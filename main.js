@@ -2,7 +2,7 @@ nose_x=""
 nose_y=""
 
 function preload()  {
-
+colwn_nose=loadImage("https://i.postimg.cc/Kvx1dskk/114-1147898-clown-nose-png-clip-art-clown-nose-transparent-removebg-preview.png")
 } 
 
 function  setup() {
@@ -34,9 +34,14 @@ if ( Results.length > 0) {
 
 
 function  draw()  {
-  image(video,0,0,400,400)
+  image(video,0,0,400,400);
+  fill(255 , 0 , 0);
+  stroke(255 , 0 , 0);
+  //circle(nose_x,nose_y,20);
+
+  image(colwn_nose , nose_x-20 , nose_y-20 , 30, 30)
 }
 
 function takeSnapshot() {
-    save("picture.png")
+    save("picture.png");
 }
